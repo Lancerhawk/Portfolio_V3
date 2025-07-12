@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, CheckCircle } from 'lucide-react';
 import type { ContactFormData } from '../../types';
 import './Contact.css';
 import emailjs from 'emailjs-com';
 
-// SuccessDialog modal with confetti
 const SuccessDialog: React.FC<{ open: boolean }> = ({ open }) => {
   const [showConfetti, setShowConfetti] = useState(false);
   React.useEffect(() => {
@@ -27,11 +26,9 @@ const SuccessDialog: React.FC<{ open: boolean }> = ({ open }) => {
   );
 };
 
-// Simple confetti particles (static, top row)
 const ConfettiParticles: React.FC = () => {
-  // Generate static confetti pieces in a row
   const confetti = Array.from({ length: 20 }).map((_, i) => {
-    const left = 5 + i * 4.5 + Math.random() * 2; // spread evenly, slight random offset
+    const left = 5 + i * 4.5 + Math.random() * 2;
     const color = [
       "#00fff0",
       "#ff00ea",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Award, Calendar, Star } from 'lucide-react';
+import { ExternalLink, Star } from 'lucide-react';
 import type { Certification } from '../../types';
 import './Certifications.css';
 import ultronHackathonImg from '../../assets/Certifications_Images/UltronHackathon/Untitled design (3).png';

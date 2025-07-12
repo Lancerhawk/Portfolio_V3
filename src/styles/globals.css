@@ -241,7 +241,7 @@ body {
 
 .scroll-up-btn {
   position: fixed;
-  right: 2.2rem;
+  left: 2.2rem;
   bottom: 2.2rem;
   z-index: 9999;
   background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));

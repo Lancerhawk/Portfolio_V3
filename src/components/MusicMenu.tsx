@@ -14,7 +14,6 @@ const MusicMenu: React.FC<MusicMenuProps> = ({ playOnMount, initialTrack = 0, in
   const [closing, setClosing] = useState(false);
   const [current, setCurrent] = useState(initialTrack);
   const [playing, setPlaying] = useState(false);
-  const [autoPlayTried, setAutoPlayTried] = useState(false);
   const [trackTime, setTrackTime] = useState({ current: 0, duration: 0 });
   const audioRef = useRef<HTMLAudioElement>(null);
   const [volume, setVolume] = useState(initialVolume);
@@ -31,9 +30,7 @@ const MusicMenu: React.FC<MusicMenuProps> = ({ playOnMount, initialTrack = 0, in
       }
     }
   }, [playOnMount]);
-  // If not playOnMount, do not auto-play
 
-  // Track time updates
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -46,7 +43,6 @@ const MusicMenu: React.FC<MusicMenuProps> = ({ playOnMount, initialTrack = 0, in
     };
   }, [current]);
 
-  // Set audio volume when changed
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = volume;
@@ -100,7 +96,7 @@ const MusicMenu: React.FC<MusicMenuProps> = ({ playOnMount, initialTrack = 0, in
     setTimeout(() => {
       setOpen(false);
       setClosing(false);
-    }, 300); // match animation duration
+    }, 300); 
   };
 
   return (
@@ -110,7 +106,6 @@ const MusicMenu: React.FC<MusicMenuProps> = ({ playOnMount, initialTrack = 0, in
           <Music />
         </button>
       )}
-      {/* Audio element is always rendered so music continues regardless of menu state */}
       <audio
         ref={audioRef}
         src={tracks[current].src}
