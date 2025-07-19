@@ -36,6 +36,11 @@ import excelImg from '../../assets/Certifications_Images/Introduction to Microso
 import cyberEssentialsImg from '../../assets/Certifications_Images/Cybersecurity Essentials badge_pages-to-jpg-0001.jpg';
 import govCertImg from '../../assets/Certifications_Images/Gov certification (1)_pages-to-jpg-0001.jpg';
 import AchievementsCarousel from '../../components/AchievementsCarousel';
+import national from '../../assets/Certifications_Images/Natinal Road Safety Hackathon 2025/image.png'
+import Hackorbit from '../../assets/Certifications_Images/HackOrbit 2025/image.png';
+import Hacksagan from '../../assets/Certifications_Images/HackSagon 2025/image.png';
+import Invest from '../../assets/Certifications_Images/Invest-O-Spective/image.png';
+import innofusion from '../../assets/Certifications_Images/InnFusion 2.0/image.png';
 
 const Certifications: React.FC = () => {
   const certifications: Certification[] = [
@@ -402,6 +407,61 @@ const Certifications: React.FC = () => {
       skills: ['Certification', 'Professional Development'],
       category: 'course',
     },
+    {
+  id: 'auto-34',
+  title: 'HackOrbit',
+  issuer: 'HackOrbit 2024',
+  date: 'April 2024',
+  description: 'Participated in HackOrbit 2024, a 36-hour hackathon hosted by IEEE-VIT, showcasing innovative tech solutions.',
+  imageUrl: Hackorbit,
+  credentialUrl: '',
+  skills: ['Hackathon', 'Innovation', 'Tech Projects'],
+  category: 'hackathon',
+},
+{
+  id: 'auto-35',
+  title: 'National Road Safety Hackathon 2023',
+  issuer: 'Ministry of Road Transport & Highways (MoRTH), Govt. of India',
+  date: 'January 2023',
+  description: 'Participated in the National Road Safety Hackathon organized by MoRTH in collaboration with MyGov India and IIT Madras.',
+  imageUrl: national,
+  credentialUrl: '',
+  skills: ['Hackathon', 'Road Safety', 'Innovation'],
+  category: 'hackathon',
+},
+{
+  id: 'auto-38',
+  title: 'InnoFusion 2.0',
+  issuer: 'InnoFusion',
+  date: 'February 2024',
+  description: 'Participated in InnFusion 2.0, contributing innovative ideas toward sustainable and impactful solutions.',
+  imageUrl: innofusion,
+  credentialUrl: '',
+  skills: ['Sustainability', 'Ideation', 'Hackathon'],
+  category: 'hackathon',
+},
+{
+  id: 'auto-36',
+  title: 'HackSagon',
+  issuer: 'HackSagon 2024',
+  date: 'May 2024',
+  description: 'Participated in HackSagon 2024, delivering a tech-driven solution for smart systems.',
+  imageUrl: Hacksagan,
+  credentialUrl: '',
+  skills: ['Teamwork', 'Hackathon', 'Smart Systems'],
+  category: 'hackathon',
+},
+{
+  id: 'auto-37',
+  title: 'Invest-O-Spective',
+  issuer: 'Finanza - NMIMS',
+  date: 'March 2024',
+  description: 'Showcased strategic thinking and analytical abilities in the finance-themed event Invest-O-Spective by NMIMS.',
+  imageUrl: Invest,
+  credentialUrl: '',
+  skills: ['Finance', 'Strategy', 'Analytical Thinking'],
+  category: 'hackathon',
+},
   ];
 
   const [search, setSearch] = React.useState('');
@@ -489,6 +549,7 @@ const Certifications: React.FC = () => {
               <button
                 key={f.value}
                 className={`filter-btn ${filter === f.value ? 'active' : ''}`}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 onClick={() => setFilter(f.value as any)}
               >
                 {f.label}

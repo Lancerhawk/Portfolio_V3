@@ -9,10 +9,10 @@ const About: React.FC = () => {
 
     //Languages
     { name: 'Javascript', level: 90, category: 'languages' },
+    { name: 'Java', level: 80, category: 'languages' },
+    { name: 'C#', level: 90, category: 'languages' },
+    { name: 'Kotlin', level: 40, category: 'languages'},
     { name: 'C & C++ (DSA)', level: 80, category: 'languages' },
-    { name: 'C#', level: 80, category: 'languages' },
-    { name: 'Kotlin', level: 80, category: 'languages' },
-    { name: 'Java', level: 60, category: 'languages' },
 
     //Softwares
     { name: 'Asprite', level: 90, category: 'softwares' },
@@ -23,20 +23,35 @@ const About: React.FC = () => {
     { name: 'Figma', level: 90, category: 'softwares' },
 
     // Frontend
+    { name: 'HTML/CSS', level: 90, category: 'frontend' },
     { name: 'React', level: 95, category: 'frontend' },
     { name: 'TypeScript', level: 90, category: 'frontend' },
-    { name: 'HTML/CSS', level: 90, category: 'frontend' },
+    { name: 'Astro.js', level: 90, category: 'frontend' },
     { name: 'Tailwind', level: 80, category: 'frontend' },
-    { name: 'Next.js', level: 85, category: 'frontend' },
-    // { name: 'Nest.js', level: 85, category: 'frontend' },
+    { name: 'Next.js', level: 60, category: 'frontend' },
 
     // Backend
     { name: 'Node.js', level: 90, category: 'backend' },
     { name: 'Python', level: 85, category: 'backend' },
     { name: 'Express.js', level: 85, category: 'backend' },
-    { name: 'PostgreSQL', level: 80, category: 'backend' },
-    { name: 'MongoDB', level: 75, category: 'backend' },
-    { name: 'Nest.js', level: 85, category: 'backend' },
+    { name: 'Spring Boot', level: 90, category: 'backend' },
+    { name: 'Nest.js', level: 60, category: 'backend' },
+
+    //Databases
+    { name: 'MongoDB', level: 90, category: 'database' },
+    { name: 'MySQL', level: 80, category: 'database' },
+    { name: 'PostgreSQL', level: 70, category: 'database' },
+    { name: 'Firebase', level: 80, category: 'database' },
+
+    // Game Development
+    { name: 'Unity', level: 90, category: 'game' },
+    { name: 'Godot', level: 70, category: 'game' },
+
+    // Data Analytics Tools
+    { name: 'Power BI', level: 80, category: 'data' },
+    { name: 'Tableau', level: 75, category: 'data' },
+    { name: 'Excel', level: 90, category: 'data' },
+    { name: 'SQL', level: 85, category: 'data' },
 
     // Tools
     { name: 'Git', level: 90, category: 'tools' },
@@ -79,6 +94,12 @@ const About: React.FC = () => {
         return 'Languages';
       case 'softwares':
         return 'Softwares';
+      case 'game':
+        return 'Game Development';
+      case 'database':
+        return 'Databases';
+      case 'data':
+        return 'Data Analytics';
       default:
         return 'Other Skills';
     }
@@ -129,7 +150,7 @@ const About: React.FC = () => {
                   </div>
                   <div className="fact">
                     <span className="fact-label">Certifications:</span>
-                    <span className="fact-value">25</span>
+                    <span className="fact-value">30+</span>
                   </div>
                   <div className="fact">
                     <span className="fact-label">Location:</span>
@@ -148,7 +169,7 @@ const About: React.FC = () => {
         <section className="skills-section section">
           <h2 className="section-title">Skills & Expertise</h2>
           <div className="skills-categories">
-            {['languages', 'softwares', 'frontend', 'backend', 'tools'].map((category) => (
+            {['languages', 'softwares', 'frontend', 'backend', 'database','data','tools', 'game'].map((category) => (
               <div key={category} className="skill-category card fade-in">
                 <div className="category-header">
                   <div className="category-icon">

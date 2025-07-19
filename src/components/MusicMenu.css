@@ -645,10 +645,10 @@
   outline: none;
   box-shadow: 0 0 0 2px #00fff0;
 }
-@media (max-width: 600px) {
+@media (max-width: 770px) {
   .music-menu {
-    right: 1rem;
-    bottom: 1rem;
+    /* right: 1rem; */
+    bottom: 0.5rem;
   }
   .music-menu-panel {
     min-width: 180px;

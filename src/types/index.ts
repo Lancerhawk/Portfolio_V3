@@ -40,7 +40,7 @@ export interface Certification {
 export interface Skill {
   name: string;
   level: number;
-  category: 'frontend' | 'backend' | 'tools' | 'other' | 'languages' | 'softwares';
+  category: 'frontend' | 'backend' | 'tools' | 'other' | 'languages' | 'softwares' | 'data' | 'game' | 'database';
 }
 
 export interface ContactFormData {
