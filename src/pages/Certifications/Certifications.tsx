@@ -37,7 +37,7 @@ import cyberEssentialsImg from '../../assets/Certifications_Images/Cybersecurity
 import govCertImg from '../../assets/Certifications_Images/Gov certification (1)_pages-to-jpg-0001.jpg';
 import AchievementsCarousel from '../../components/AchievementsCarousel';
 import national from '../../assets/Certifications_Images/Natinal Road Safety Hackathon 2025/image.png'
-import Hackorbit from '../../assets/Certifications_Images/HackOrbit 2025/image.png';
+import Hackorbit from '../../assets/Certifications_Images/HackOrbit 2025/image.jpg';
 import Hacksagan from '../../assets/Certifications_Images/HackSagon 2025/image.png';
 import Invest from '../../assets/Certifications_Images/Invest-O-Spective/image.png';
 import innofusion from '../../assets/Certifications_Images/InnFusion 2.0/image.png';
