@@ -41,6 +41,7 @@ import Hackorbit from '../../assets/Certifications_Images/HackOrbit 2025/image.p
 import Hacksagan from '../../assets/Certifications_Images/HackSagon 2025/image.png';
 import Invest from '../../assets/Certifications_Images/Invest-O-Spective/image.png';
 import innofusion from '../../assets/Certifications_Images/InnFusion 2.0/image.png';
+import webdev from '../../assets/Certifications_Images/Fullstack Web Development/image.png';
 
 const Certifications: React.FC = () => {
   const certifications: Certification[] = [
@@ -461,6 +462,16 @@ const Certifications: React.FC = () => {
   credentialUrl: '',
   skills: ['Finance', 'Strategy', 'Analytical Thinking'],
   category: 'hackathon',
+},{
+  id: 'auto-38',
+  title: 'Full stack Web Development',
+  issuer: 'Mysynctech Coding School',
+  date: 'March 2025',
+  description: 'Full Stack Web Development course covering HTML, CSS, JavaScript, Node.js, and React.',
+  imageUrl: webdev,
+  credentialUrl: '',
+  skills: ['MERN', 'GenAI', 'Analytical Thinking', 'Logical Thinking', 'Problem Solving', 'Web Development'],
+  category: 'course',
 },
   ];
 

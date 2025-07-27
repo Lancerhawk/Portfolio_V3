@@ -76,6 +76,11 @@ import timer2 from '../../assets/Projects/Timer/2.png';
 import timer3 from '../../assets/Projects/Timer/3.png';
 import timer4 from '../../assets/Projects/Timer/4.png';
 import timer5 from '../../assets/Projects/Timer/5.png';
+import insight1 from '../../assets/Projects/InSightAI/1.png'
+import insight2 from '../../assets/Projects/InSightAI/2.png'
+import insight3 from '../../assets/Projects/InSightAI/3.png'
+import insight4 from '../../assets/Projects/InSightAI/4.png'
+import insight5 from '../../assets/Projects/InSightAI/5.png'
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -85,34 +90,6 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'MedicKit Inventory System',
-      status: 'in-progress',
-      description: 'A full-featured Supply Chain platform with real-time Inventory Management System for Hospitals and Local Pharmacies.',
-      longDescription: 'Built a web application to streamline pharmaceutical supply chain management with realtime inventory tracking, automated stock updates, and order forecasting enhancing coordination, reducing errors, and ensuring timely drug delivery.',
-      technologies: ['React.js', 'Node.js', 'PostgreSQL', 'Express.js', 'AWS'],
-      imageUrl: medic1,
-      screenshots: [ medic1, medic2, medic3, medic4, medic5],
-      liveUrl: 'https://project-medic-kit-sih.vercel.app/',
-      githubUrl: 'https://github.com/Lancerhawk/Project-MedicKit',
-      category: 'webapp'
-    },
-    {
-      id: '2',
-      title: 'Vital Check',
-      status: 'in-progress',
-      description: 'VitalCheck is an AI-powered diagnostic platform that enables real-time, multi-disease detection through medical imaging and smart reports — built for doctors and patients alike.',
-      longDescription: '<strong>VitalCheck</strong> is an AI-powered healthcare platform built to assist doctors in managing patients, registering cases, and leveraging deep learning for disease prediction and medical report analysis. With a secure, role-based system and intuitive UI, VitalCheck enhances diagnostic support and patient care through intelligent automation.<br><br>Developed with a modern stack including <strong>React</strong>, <strong>Vite</strong>, <strong>MUI</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and integrated AI services via <strong>Python</strong>, it offers seamless performance and advanced medical features.<br><br><strong>Key Features:</strong><br><ul><li><strong>Doctor Dashboard:</strong> Secure panel for managing patients, appointments, and AI results.</li><li><strong>AI Disease Prediction:</strong> Detects brain tumors (MRI), lung cancer (CT), chest tuberculosis (X-ray), skin diseases (image), and heart disease (blood report PDF).</li><li><strong>Appointment Calendar:</strong> Integrated calendar for scheduling and managing consultations.</li><li><strong>Patient Management:</strong> Register, update, delete patients with image upload and preview.</li><li><strong>Authentication:</strong> JWT-based login, role-based access control, and auto-generated patient credentials.</li><li><strong>AI Integration:</strong> REST endpoints for image and PDF-based predictions with class output and confidence score.</li><li><strong>Security:</strong> All patient data linked to the registering doctor; strict backend validation and secure storage.</li><li><strong>PDF Parsing:</strong> Extracts structured data from blood reports for heart disease risk prediction.</li></ul><br><strong>AI Models:</strong><br><ul><li><strong>Brain Tumor:</strong> MRI-based, 4 classes — glioma, meningioma, pituitary, no tumor.</li><li><strong>Lung Cancer:</strong> CT scan-based, 3 classes — benign, malignant, normal.</li><li><strong>Chest Tuberculosis:</strong> X-ray-based, 2 classes — tuberculosis, normal.</li><li><strong>Skin Disease:</strong> Multi-class image classification via MobileNetV2 transfer learning.</li><li><strong>Heart Disease:</strong> Blood report (PDF) analysis via structured data parsing.</li></ul><br><strong>Backend & Frontend Highlights:</strong><br><ul><li><strong>Node.js + Express Backend:</strong> Auth, patient CRUD, appointment routes, and email integration with Nodemailer.</li><li><strong>React Frontend:</strong> Vite-powered SPA with role-based UI, calendar, AI prediction modules, and image fallback handling.</li></ul><br><strong>VitalCheck</strong> bridges AI and healthcare into one intelligent ecosystem, empowering doctors with fast, data-driven diagnostic tools.<br><br><em>🩺 Predict smarter. Care better. Automate diagnosis with AI.</em>',
-      technologies: ['React', 'NodeJS with ExpressJS', 'Flask', 'AWS', 'ML & DL'],
-      imageUrl: vital1,
-      screenshots: [
-        vital1, vital2, vital3, vital4, vital5
-      ],
-      liveUrl: 'https://project-vital-check-git-main-lancerhawks-projects.vercel.app',
-      githubUrl: 'https://github.com/Lancerhawk/Project-VitalCheck',
-      category: 'webapp'
-    },
-    {
-      id: '3',
       title: 'Taskflow: Kanban Board',
       status: 'completed',
       description: 'TaskFlow, a fully responsive and beautifully designed Kanban web app to manage tasks and projects with ease and elegance.',
@@ -127,7 +104,49 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
+      id: '2',
+      title: 'InSight AI : Revolutionizing Technical Interview Preparation with AI',
+      status: 'completed',
+      description: 'InSight AI is a modern web application that allows users to take simulated job interviews, receive dynamic AI-generated questions, and get detailed, real-time feedback, all in a smooth, voice-based environment.',
+      longDescription: '<strong>InSight AI</strong> is a full-stack, AI-powered interview preparation platform designed to help students, job-seekers, and developers simulate real interviews, receive intelligent AI-generated questions, and get detailed voice-based feedback in real time. Built using <strong>Next.js App Router</strong>, <strong>MongoDB</strong>, <strong>NextAuth.js</strong>, and integrated AI APIs like <strong>Gemini</strong> and <strong>OpenAI</strong>, it delivers a seamless experience across devices with a modern UI and responsive features. <strong>Key Features:</strong> <ul><li><strong>Secure Authentication:</strong> Email/password login using NextAuth.js and bcrypt.</li><li><strong>Voice-Based Interviews:</strong> Real-time mock interviews with Vapi voice agents.</li><li><strong>AI-Generated Questions:</strong> Dynamic question generation and evaluation via Gemini & OpenAI APIs.</li><li><strong>Smart Feedback:</strong> Persistent user-specific feedback that evolves with every attempt.</li><li><strong>Responsive Dashboard:</strong> Visualizes interview history, feedback, and user performance.</li><li><strong>Tech Stack Visualizer:</strong> Automatically displays icons and metadata per interview session.</li><li><strong>Modern UI/UX:</strong> Animated transitions, sticky navbar, loaders, and accessible design.</li></ul> <strong>InSight AI</strong> bridges intelligence and simulation into one powerful interview assistant, empowering users with real-time insights, voice interaction, and structured preparation. <em>🎯 Practice smarter. Interview confidently. Level up with AI.</em>',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'MongoDB', 'NextAuth.js','Vapi AI', 'GOogle Gemini API', 'OpenAI API'],
+      imageUrl: insight1,
+      screenshots: [ insight1, insight2, insight3, insight4, insight5],
+      liveUrl: 'https://in-sight-ai-mock-interview-proj-git-2654e2-lancerhawks-projects.vercel.app',
+      githubUrl: 'https://github.com/Lancerhawk/InSight_AI_MockInterview_Project',
+      category: 'webapp'
+    },
+    {
+      id: '3',
+      title: 'Vital Check',
+      status: 'in-progress',
+      description: 'VitalCheck is an AI-powered diagnostic platform that enables real-time, multi-disease detection through medical imaging and smart reports — built for doctors and patients alike.',
+      longDescription: '<strong>VitalCheck</strong> is an AI-powered healthcare platform built to assist doctors in managing patients, registering cases, and leveraging deep learning for disease prediction and medical report analysis. With a secure, role-based system and intuitive UI, VitalCheck enhances diagnostic support and patient care through intelligent automation.<br><br>Developed with a modern stack including <strong>React</strong>, <strong>Vite</strong>, <strong>MUI</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and integrated AI services via <strong>Python</strong>, it offers seamless performance and advanced medical features.<br><br><strong>Key Features:</strong><br><ul><li><strong>Doctor Dashboard:</strong> Secure panel for managing patients, appointments, and AI results.</li><li><strong>AI Disease Prediction:</strong> Detects brain tumors (MRI), lung cancer (CT), chest tuberculosis (X-ray), skin diseases (image), and heart disease (blood report PDF).</li><li><strong>Appointment Calendar:</strong> Integrated calendar for scheduling and managing consultations.</li><li><strong>Patient Management:</strong> Register, update, delete patients with image upload and preview.</li><li><strong>Authentication:</strong> JWT-based login, role-based access control, and auto-generated patient credentials.</li><li><strong>AI Integration:</strong> REST endpoints for image and PDF-based predictions with class output and confidence score.</li><li><strong>Security:</strong> All patient data linked to the registering doctor; strict backend validation and secure storage.</li><li><strong>PDF Parsing:</strong> Extracts structured data from blood reports for heart disease risk prediction.</li></ul><br><strong>AI Models:</strong><br><ul><li><strong>Brain Tumor:</strong> MRI-based, 4 classes — glioma, meningioma, pituitary, no tumor.</li><li><strong>Lung Cancer:</strong> CT scan-based, 3 classes — benign, malignant, normal.</li><li><strong>Chest Tuberculosis:</strong> X-ray-based, 2 classes — tuberculosis, normal.</li><li><strong>Skin Disease:</strong> Multi-class image classification via MobileNetV2 transfer learning.</li><li><strong>Heart Disease:</strong> Blood report (PDF) analysis via structured data parsing.</li></ul><br><strong>Backend & Frontend Highlights:</strong><br><ul><li><strong>Node.js + Express Backend:</strong> Auth, patient CRUD, appointment routes, and email integration with Nodemailer.</li><li><strong>React Frontend:</strong> Vite-powered SPA with role-based UI, calendar, AI prediction modules, and image fallback handling.</li></ul><br><strong>VitalCheck</strong> bridges AI and healthcare into one intelligent ecosystem, empowering doctors with fast, data-driven diagnostic tools.<br><br><em>🩺 Predict smarter. Care better. Automate diagnosis with AI.</em>',
+      technologies: ['React', 'NodeJS with ExpressJS', 'Flask', 'AWS', 'ML & DL'],
+      imageUrl: vital1,
+      screenshots: [
+        vital1, vital2, vital3, vital4, vital5
+      ],
+      liveUrl: 'https://project-vital-check-git-main-lancerhawks-projects.vercel.app',
+      githubUrl: 'https://github.com/Lancerhawk/Project-VitalCheck',
+      category: 'webapp'
+    },
+    {
       id: '4',
+      title: 'MedicKit Inventory System',
+      status: 'in-progress',
+      description: 'A full-featured Supply Chain platform with real-time Inventory Management System for Hospitals and Local Pharmacies.',
+      longDescription: 'Built a web application to streamline pharmaceutical supply chain management with realtime inventory tracking, automated stock updates, and order forecasting enhancing coordination, reducing errors, and ensuring timely drug delivery.',
+      technologies: ['React.js', 'Node.js', 'PostgreSQL', 'Express.js', 'AWS'],
+      imageUrl: medic1,
+      screenshots: [ medic1, medic2, medic3, medic4, medic5],
+      liveUrl: 'https://project-medic-kit-sih.vercel.app/',
+      githubUrl: 'https://github.com/Lancerhawk/Project-MedicKit',
+      category: 'webapp'
+    },
+    
+    {
+      id: '5',
       title: 'Video Downloader',
       status: 'completed',
       description: 'Video Downloader Pro is a full-stack web app that lets users download YouTube and Instagram videos in various qualities with a smooth, glassmorphic UI.',
@@ -142,7 +161,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '5',
+      id: '6',
       title: 'IEEE Logo Making Competition Website',
       status: 'completed',
       description: 'A creative competition inviting BGIEM students to design the official logo for the IEEE Student Branch, showcasing originality, aesthetic skill, and alignment with IEEE’s core values.',
@@ -157,7 +176,7 @@ const Projects: React.FC = () => {
       category: 'website'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Coding Era! Community Website',
       status: 'completed',
       description: 'A student-powered tech and innovation ecosystem dedicated to transforming college learners into builders, startup founders, and industry-ready professionals through real-world projects, mentorship, and community-driven growth.',
@@ -172,7 +191,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '7',
+      id: '8',
       title: 'Project LMS Portal',
       status: 'in-progress',
       description: 'A centralized Learning Management System (LMS) portal designed to streamline course management, assignments, and student-faculty interaction in a seamless digital environment.',
@@ -187,7 +206,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '8',
+      id: '9',
       title: 'Expense Management System',
       status: 'in-progress',
       description: 'A MERN-stack-based Transaction Management System that enables users to securely track income and expenses with detailed analytics and interactive financial dashboards.',
@@ -202,7 +221,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '9',
+      id: '10',
       title: 'Game Tournament Website',
       status: 'completed',
       description: 'A dynamic game tournament website that allows users to register, join matches, view leaderboards, and track real-time results across competitive gaming events.',
@@ -217,7 +236,7 @@ const Projects: React.FC = () => {
       category: 'website'
     },
     {
-      id: '10',
+      id: '11',
       title: 'Global Youth Fest 2025 Website',
       status: 'completed',
       description: 'A vibrant website for Youth Fest 2025, showcasing event schedules, registrations, highlights, and celebrations of talent and culture across the college campus.',
@@ -232,7 +251,7 @@ const Projects: React.FC = () => {
       category: 'website'
     },
     {
-      id: '11',
+      id: '12',
       title: 'AI Grammer Corrector',
       status: 'completed',
       description: 'A server-side web application that leverages OpenAIs API to help users improve their writing.',
@@ -247,7 +266,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '12',
+      id: '13',
       title: 'Project Artemis',
       status: 'in-progress',
       description: 'An all-in-one AI-powered platform that unifies learning, development, business intelligence, and creative tools into a personalized, collaborative, and adaptive digital workspace.',
@@ -262,7 +281,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '13',
+      id: '14',
       title: 'Home Designer AI',
       status: 'completed',
       description: 'This project is a Streamlit-based application that generates home design layouts using Google Gemini AI and fetches design inspiration from Lexica.art.',
@@ -277,7 +296,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '14',
+      id: '15',
       title: 'Cancer Detection AI',
       status: 'in-progress',
       description: 'An AI-powered web app for early cancer detection using scans and medical reports, featuring personalized dashboards and doctor-patient management, winner of an internal hackathon on AI for Healthcare.',
@@ -292,7 +311,7 @@ const Projects: React.FC = () => {
       category: 'webapp'
     },
     {
-      id: '15',
+      id: '16',
       title: 'SkillMorph Website',
       status: 'completed',
       description: 'A gamified professional learning website that visually simulates AI-driven skill development and personalized learning journeys, with future plans for full backend and AI integration.',
@@ -307,7 +326,7 @@ const Projects: React.FC = () => {
       category: 'website'
     },
     {
-      id: '16',
+      id: '17',
       title: 'Employee Management System',
       status: 'completed',
       description: 'A simple Employee Management System created with React, offering a login and dashboard experience for both employees and admins all without a backend! This project demonstrates file system storage for managing user data locally and provides a clean, responsive interface for users to interact with tasks and deadlines.',
@@ -322,7 +341,7 @@ const Projects: React.FC = () => {
       category: 'website'
     },
     {
-      id: '17',
+      id: '18',
       title: 'Competition Timer',
       status: 'completed',
       description: 'Built a real-time timer and leaderboard web app for managing coding or quiz competitions at IEEE events. Allowed event hosts to set timers, display live scores, and control session flow with admin privileges. Designed for accuracy, visibility, and ease of use during technical contests.',

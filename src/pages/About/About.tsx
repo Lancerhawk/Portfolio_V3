@@ -10,8 +10,9 @@ const About: React.FC = () => {
     //Languages
     { name: 'Javascript', level: 90, category: 'languages' },
     { name: 'Java', level: 80, category: 'languages' },
+    // { name: 'SpringBoot', level: 80, category: 'languages' },
     { name: 'C#', level: 90, category: 'languages' },
-    { name: 'Kotlin', level: 40, category: 'languages'},
+    // { name: 'Kotlin', level: 40, category: 'languages'},
     { name: 'C & C++ (DSA)', level: 80, category: 'languages' },
 
     //Softwares

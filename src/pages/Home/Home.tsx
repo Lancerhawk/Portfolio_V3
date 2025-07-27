@@ -79,8 +79,8 @@ const Home: React.FC = () => {
                   Get In Touch <Mail />
                 </Link>
                 <a 
-                  href="/LatestResume.pdf" 
-                  download="Arin_Jain_Resume.pdf"
+                  href="/ArinJainFullstack.pdf" 
+                  download="ArinJainFullstack.pdf"
                   className="btn btn-accent btn-resume"
                 >
                   <Download /> Download Resume
